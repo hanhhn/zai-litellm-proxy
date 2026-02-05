@@ -1,0 +1,13 @@
+model_list:
+  - model_name: claude-3-5-sonnet
+    litellm_params:
+      model: zai/claude-3-5-sonnet
+      api_key: os.environ/ZAI_API_KEY
+  - model_name: claude-3-5-haiku
+    litellm_params:
+      model: zai/claude-3-5-haiku
+      api_key: os.environ/ZAI_API_KEY
+  - model_name: claude-3-opus
+    litellm_params:
+      model: zai/claude-3-opus
+      api_key: os.environ/ZAI_API_KEY
