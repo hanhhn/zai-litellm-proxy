@@ -1,6 +1,32 @@
 model_list:
-  - model_name: gml-4-7
+  # Map Claude model names to Z AI GLM-4.7
+  - model_name: claude-sonnet-4-20250514
     litellm_params:
-      model: gml-4-7
+      model: openai/glm-4.7
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZAI_API_KEY
+
+  - model_name: claude-opus-4-20250514
+    litellm_params:
+      model: openai/glm-4.7
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZAI_API_KEY
+
+  - model_name: claude-3-5-sonnet-20241022
+    litellm_params:
+      model: openai/glm-4.7
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZAI_API_KEY
+
+  - model_name: claude-3-5-haiku-20241022
+    litellm_params:
+      model: openai/glm-4.7
+      api_base: https://api.z.ai/api/coding/paas/v4
+      api_key: os.environ/ZAI_API_KEY
+
+  # Direct GLM model access
+  - model_name: glm-4.7
+    litellm_params:
+      model: openai/glm-4.7
       api_base: https://api.z.ai/api/coding/paas/v4
       api_key: os.environ/ZAI_API_KEY
