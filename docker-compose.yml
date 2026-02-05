@@ -10,5 +10,6 @@ services:
       - ./config.yaml:/app/config.yaml
     environment:
       - ZAI_API_KEY=${ZAI_API_KEY}
-    command: litellm --port 4000 --config /app/config.yaml
+      - LITELLM_CONFIG_PATH=/app/config.yaml
+    command: litellm --port 4000
     restart: unless-stopped
