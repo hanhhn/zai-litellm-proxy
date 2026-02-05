@@ -1,13 +1,6 @@
 model_list:
-  - model_name: claude-3-5-sonnet
+  - model_name: gml-4-7
     litellm_params:
-      model: zai/claude-3-5-sonnet
-      api_key: os.environ/ZAI_API_KEY
-  - model_name: claude-3-5-haiku
-    litellm_params:
-      model: zai/claude-3-5-haiku
-      api_key: os.environ/ZAI_API_KEY
-  - model_name: claude-3-opus
-    litellm_params:
-      model: zai/claude-3-opus
+      model: gml-4-7
+      api_base: https://api.z.ai/api/coding/paas/v4
       api_key: os.environ/ZAI_API_KEY
