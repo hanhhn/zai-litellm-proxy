@@ -10,5 +10,5 @@ services:
       - ./config.yaml:/app/config.yaml
     environment:
       - ZAI_API_KEY=${ZAI_API_KEY}
-    command: ["--config", "/app/config.yaml", "--port", "4000", "--detailed_debug"]
+    command: litellm --port 4000 --drop_params
     restart: unless-stopped
